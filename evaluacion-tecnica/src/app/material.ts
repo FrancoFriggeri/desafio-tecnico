@@ -1,8 +1,9 @@
 import {MatMenuModule} from '@angular/material/menu'; 
-
+import {MatIconModule} from '@angular/material/icon'; 
 
 const MATERIALES = [
-    MatMenuModule
+    MatMenuModule,
+    MatIconModule
 ]
 
 import { NgModule } from '@angular/core';

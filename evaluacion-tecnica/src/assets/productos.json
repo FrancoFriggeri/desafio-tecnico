@@ -1,0 +1,87 @@
+[
+    {
+        "name": "Productos",
+        "id": 0,
+        "children": 
+        [{
+            
+        
+            "name": "Bebidas",
+            "id": 1,
+            "children": [
+                {
+                    "name": "Gaseosas",
+                    "id": 100,
+                    "children": [
+                        {
+                            "name": "Con Alcohol",
+                            "id": 1010,
+                            "children": []
+                        },
+                        {
+                            "name": "Sin Alcohol",
+                            "id": 1009,
+                            "children": [
+                                {
+                                    "name": "Con Azúcar",
+                                    "id": 101,
+                                    "children": [
+
+                                    ]
+                                },
+                                {
+                                    "name": "Sin Azucar",
+                                    "id": 103,
+                                    "children": [
+                                        {
+                                            "name": "Jugos",
+                                            "id": 189,
+                                            "children": []
+                                        },
+                                        {
+                                            "name": "Energizantes",
+                                            "id": 1222,
+                                            "children": [
+                                                {
+                                                    "name": "Fruta",
+                                                    "id": 1223,
+                                                    "children": [
+                                                        {
+                                                            "name": "Sin grasa",
+                                                            "id": 12231231,
+                                                            "parentId": 1223
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }                   
+
+                                    ]
+                                }
+                                
+                                
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+        ,
+        {
+            "name": "Comidas",
+            "id": 2,
+            "children": []
+        },
+        {
+            "name": "Limpieza",
+            "id": 3,
+            "children": []
+        }
+    
+        ]
+    }
+]
+
+
+ 
+ 

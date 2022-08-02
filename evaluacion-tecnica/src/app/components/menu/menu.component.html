@@ -1,1 +1,20 @@
-<p>menu works!</p>
+
+
+<div>
+    <span *ngFor="let producto of productos">
+
+      <span *ngIf="producto.children && producto.children.length > 0">
+        <button mat-raised-button [matMenuTriggerFor]="menu.childMenu">
+          {{producto.name}}
+          <mat-icon>expand_more</mat-icon>
+        </button>
+        <app-items #menu [items]="producto.children"></app-items>
+      </span>
+
+      <span *ngIf="!producto.children || producto.children.length === 0">
+        <button mat-button [routerLink]="producto.name">
+          {{producto.name}}
+        </button>
+      </span>
+    </span>
+</div>

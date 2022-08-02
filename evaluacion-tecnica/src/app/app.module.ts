@@ -5,20 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 //Material
-import { MyMaterialModule } from './material'
+import { MyMaterialModule } from './material';
+import { ItemsComponent } from './components/items/items.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    ItemsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MyMaterialModule
+    MyMaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
