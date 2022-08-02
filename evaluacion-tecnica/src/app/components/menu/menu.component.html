@@ -1,1 +1,33 @@
-<p>menu works!</p>
+<button mat-button [matMenuTriggerFor]="productos">Animal index</button>
+<mat-menu #productos="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="bebidas">Bebidas</button>
+  <button mat-menu-item>Comidas</button>
+  <button mat-menu-item>Limpieza</button>
+</mat-menu>
+
+<mat-menu #bebidas="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="gaseosas">Gaseosa</button>
+</mat-menu>
+
+<mat-menu #gaseosas="matMenu">
+    <button mat-menu-item>Con Alcohol</button>
+    <button mat-menu-item [matMenuTriggerFor]="sinalcohol">Sin Alcohol</button>
+</mat-menu>
+
+<mat-menu #sinalcohol="matMenu">
+    <button mat-menu-item> Con Azúcar</button>
+    <button mat-menu-item [matMenuTriggerFor]="sinazucar">Sin Azúcar</button>
+</mat-menu>
+
+<mat-menu #sinazucar="matMenu">
+    <button mat-menu-item>Jugos</button>
+    <button mat-menu-item [matMenuTriggerFor]="energizantes">Energizantes</button>
+</mat-menu>
+
+<mat-menu #energizantes="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="fruta">Fruta</button>
+</mat-menu>
+
+<mat-menu #fruta="matMenu">
+    <button mat-menu-item>Sin grasa</button>
+</mat-menu>
