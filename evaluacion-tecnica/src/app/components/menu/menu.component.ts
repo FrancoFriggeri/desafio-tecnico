@@ -15,11 +15,14 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
     // this.productos = this.productoService.obtenerProductos();
-    this.productoService.obtenerProductos().subscribe(
-      (response: Producto[]) => {
-        this.productos = response;
-      }
-    );
+    // this.productoService.obtenerProductos().subscribe(
+    //   (response: Producto[]) => {
+    //     this.productos = response;
+    //   }
+    // );
+    this.productos = this.productoService.getArbol();
+    console.log("arbol de productos en menu component:", this.productos);
+    
   }
 
 }
