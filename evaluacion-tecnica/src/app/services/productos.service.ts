@@ -11,10 +11,8 @@ export class ProductosService {
 
   productos: Producto[] = [];
   productosSimples: ProductoSimple[] = [];
-  productosSimplesAux: ProductoSimple[] = [];
   arbolProductos: Producto[] = [];
   primeraEjecucion: boolean;
-  arbolProductosObs: Observable<Producto[]> = new Observable();
   constructor(
     private http: HttpClient
   ) { 
@@ -32,7 +30,6 @@ export class ProductosService {
     this.http.get('assets/productos-simples.json').subscribe(
       (response: any) => {
         this.productosSimples = response;
-        this.productosSimplesAux = response;
         this.generarArbol();
       }
     )
@@ -77,9 +74,7 @@ export class ProductosService {
     
   }
 
-  private cargaNodosPadres(): void{
-    
-  }
+
   private agregarProducto(productoAgregar: ProductoSimple, array: Producto[]): void {
   
     array.forEach(element => {
